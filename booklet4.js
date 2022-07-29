@@ -71,19 +71,25 @@ solicitando en cada ciclo un precio y porcentaje al usuario.*/
 
 function cotizardolar(){
     const tasadecambiopesos=323 //Para este ejemplo tome un tipo de cambio fijo o constante
-    let pesosingresados=parseInt(prompt("ingrese la cantidad de Pesos argentinos que desea convertir en dolares"));    
-    return ((pesosingresados/tasadecambiopesos)+" "+"$USD");
+    let pesosingresados=parseInt(prompt("Ingrese la cantidad de Pesos argentinos que desea convertir en dolares"));    
+    while (isNaN(pesosingresados)) {
+        pesosingresados=parseInt(prompt("Ingrese la cantidad de Pesos argentino en numero que desea convertir en dolares"));
+      }
+        return ((pesosingresados/tasadecambiopesos)+" "+"$USD");
 }
 
 function cotizarpesos(){
 
     const tasadecambiopesos=323 // Para este ejemplo tome un tipo de cambio fijo o constante
-    let dolaresingresados=parseInt(prompt("ingrese la cantidad de dolares que desea convertir a pesos argentinos"));
-    return ((dolaresingresados*tasadecambiopesos)+" "+"$ARS");
+    let dolaresingresados=parseInt(prompt("Ingrese la cantidad de dolares que desea convertir a pesos argentinos"));
+    while (isNaN(dolaresingresados)) {
+        dolaresingresados=parseInt(prompt("Ingrese la cantidad de dolares en numero que desea convertir a pesos argentinos"));
+      }
+          return ((dolaresingresados*tasadecambiopesos)+" "+"$ARS");
     }
 
 function tipodecotizacion(){
-let tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada")
+let tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada, si desea finalizar ingrese ESC")
 while (tipodecotizacion !== "ESC" ){
 switch (tipodecotizacion){
 case "dolar":
@@ -93,14 +99,15 @@ case "pesos":
     alert(cotizarpesos());
     break;
 default:
-    alert("Error, debe ingresar la palabra dolar o pesos para obtener la cotizacion deseada");
+    alert("Error, debe ingresar la palabra dolar o pesos para obtener la cotizacion deseada, si desea finalizar ingrese ESC");
     break;
 }
-    tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada")
+    tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada o ESC para finalizar")
 }
+alert("Muchas gracias por realizar su conversion de divisas con nosotros")
 }
 
 
-// Actividad 5
+// // Actividad 5
 
 
