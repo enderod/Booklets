@@ -71,26 +71,18 @@ solicitando en cada ciclo un precio y porcentaje al usuario.*/
 
 function cotizardolar(){
     const tasadecambiopesos=323 //Para este ejemplo tome un tipo de cambio fijo o constante
-    let pesosingresados=prompt("ingrese la cantidad de Pesos argentinos que desea convertir en dolares");
-    pesosingresados=parseInt(pesosingresados)
-    if(pesosingresados==NaN){
-        alert("Debe ingresar la cantidad en numero de Pesos argentinos que desea convertir en dolares")
-    }
-    else{
-
-       
-    }
+    let pesosingresados=parseInt(prompt("ingrese la cantidad de Pesos argentinos que desea convertir en dolares"));    
     return ((pesosingresados/tasadecambiopesos)+" "+"$USD");
 }
 
 function cotizarpesos(){
+
     const tasadecambiopesos=323 // Para este ejemplo tome un tipo de cambio fijo o constante
     let dolaresingresados=parseInt(prompt("ingrese la cantidad de dolares que desea convertir a pesos argentinos"));
     return ((dolaresingresados*tasadecambiopesos)+" "+"$ARS");
     }
 
 function tipodecotizacion(){
-
 let tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada")
 while (tipodecotizacion !== "ESC" ){
 switch (tipodecotizacion){
@@ -104,9 +96,11 @@ default:
     alert("Error, debe ingresar la palabra dolar o pesos para obtener la cotizacion deseada");
     break;
 }
-    tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada");
+    tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada")
 }
 }
+
+
 // Actividad 5
 
 
