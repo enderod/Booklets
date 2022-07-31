@@ -41,73 +41,86 @@ Luego, invocar las tres funciones.*/
 
 // Actividad 3
 
-/*Codificar una función con la siguiente cabecera: impuesto(precio, porcentaje). 
-En ella, se retorna un valor numérico compuesto por el precio recibido, más la suma del porcentaje ingresado.
-Luego invocar la función de forma iterativa cinco (5) veces, 
-solicitando en cada ciclo un precio y porcentaje al usuario.*/
+// /*Codificar una función con la siguiente cabecera: impuesto(precio, porcentaje). 
+// En ella, se retorna un valor numérico compuesto por el precio recibido, más la suma del porcentaje ingresado.
+// Luego invocar la función de forma iterativa cinco (5) veces, 
+// solicitando en cada ciclo un precio y porcentaje al usuario.*/
 
-// function impuesto(precio,porcentaje){
-//     precio=prompt("ingrese el precio del articulo");
-//     precio=parseInt(precio);
-//     porcentaje=prompt("Ingrese el porcentaje de impuesto");
-//     porcentaje=parseInt(porcentaje);
-//     impuestofinal=((precio)+((precio*porcentaje)/100));
-//         return (impuestofinal);
-//     }
-// for (let i=1; i<=5; i++){
-//        console.log(impuesto());
+// // function impuesto(precio,porcentaje){
+// //     precio=prompt("ingrese el precio del articulo");
+// //     precio=parseInt(precio);
+// //     porcentaje=prompt("Ingrese el porcentaje de impuesto");
+// //     porcentaje=parseInt(porcentaje);
+// //     impuestofinal=((precio)+((precio*porcentaje)/100));
+// //         return (impuestofinal);
+// //     }
+// // for (let i=1; i<=5; i++){
+// //        console.log(impuesto());
        
+// // }
+// // alert("Ha finalizado la carga datos de impuesto");
+
+// // Actividad 4
+
+// // Codificar dos funciones:
+// // Una función cotizarDolar(pesos), la cual recibe un valor monetario en pesos argentinos, 
+// // y lo retorna en su equivalente en dólares.
+// // Una función cotizarPesos(dolar), 
+// // que recibe un valor monetario en dólares, y lo retorna en su equivalente en pesos argentinos.
+// // Luego invocar las funciones solicitando  al usuario el valor y el tipo de cotización a realizar.
+
+// function cotizardolar(){
+//     const tasadecambiopesos=323 //Para este ejemplo tome un tipo de cambio fijo o constante
+//     let pesosingresados=parseInt(prompt("Ingrese la cantidad de Pesos argentinos que desea convertir en dolares"));    
+//     while (isNaN(pesosingresados)) {
+//         pesosingresados=parseInt(prompt("Ingrese la cantidad de Pesos argentino en numero que desea convertir en dolares"));
+//       }
+//         return ((pesosingresados/tasadecambiopesos)+" "+"$USD");
 // }
-// alert("Ha finalizado la carga datos de impuesto");
 
-// Actividad 4
+// function cotizarpesos(){
 
-// Codificar dos funciones:
-// Una función cotizarDolar(pesos), la cual recibe un valor monetario en pesos argentinos, 
-// y lo retorna en su equivalente en dólares.
-// Una función cotizarPesos(dolar), 
-// que recibe un valor monetario en dólares, y lo retorna en su equivalente en pesos argentinos.
-// Luego invocar las funciones solicitando  al usuario el valor y el tipo de cotización a realizar.
+//     const tasadecambiopesos=323 // Para este ejemplo tome un tipo de cambio fijo o constante
+//     let dolaresingresados=parseInt(prompt("Ingrese la cantidad de dolares que desea convertir a pesos argentinos"));
+//     while (isNaN(dolaresingresados)) {
+//         dolaresingresados=parseInt(prompt("Ingrese la cantidad de dolares en numero que desea convertir a pesos argentinos"));
+//       }
+//           return ((dolaresingresados*tasadecambiopesos)+" "+"$ARS");
+//     }
 
-function cotizardolar(){
-    const tasadecambiopesos=323 //Para este ejemplo tome un tipo de cambio fijo o constante
-    let pesosingresados=parseInt(prompt("Ingrese la cantidad de Pesos argentinos que desea convertir en dolares"));    
-    while (isNaN(pesosingresados)) {
-        pesosingresados=parseInt(prompt("Ingrese la cantidad de Pesos argentino en numero que desea convertir en dolares"));
-      }
-        return ((pesosingresados/tasadecambiopesos)+" "+"$USD");
-}
-
-function cotizarpesos(){
-
-    const tasadecambiopesos=323 // Para este ejemplo tome un tipo de cambio fijo o constante
-    let dolaresingresados=parseInt(prompt("Ingrese la cantidad de dolares que desea convertir a pesos argentinos"));
-    while (isNaN(dolaresingresados)) {
-        dolaresingresados=parseInt(prompt("Ingrese la cantidad de dolares en numero que desea convertir a pesos argentinos"));
-      }
-          return ((dolaresingresados*tasadecambiopesos)+" "+"$ARS");
-    }
-
-function tipodecotizacion(){
-let tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada, si desea finalizar ingrese ESC")
-while (tipodecotizacion !== "ESC" ){
-switch (tipodecotizacion){
-case "dolar":
-    alert(cotizardolar());
-    break;
-case "pesos":
-    alert(cotizarpesos());
-    break;
-default:
-    alert("Error, debe ingresar la palabra dolar o pesos para obtener la cotizacion deseada, si desea finalizar ingrese ESC");
-    break;
-}
-    tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada o ESC para finalizar")
-}
-alert("Muchas gracias por realizar su conversion de divisas con nosotros")
-}
+// function tipodecotizacion(){
+// let tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada, si desea finalizar ingrese ESC")
+// while (tipodecotizacion !== "ESC" ){
+// switch (tipodecotizacion){
+// case "dolar":
+//     alert(cotizardolar());
+//     break;
+// case "pesos":
+//     alert(cotizarpesos());
+//     break;
+// default:
+//     alert("Error, debe ingresar la palabra dolar o pesos para obtener la cotizacion deseada, si desea finalizar ingrese ESC");
+//     break;
+// }
+//     tipodecotizacion=prompt("Ingrese la palabra dolar o pesos para obtener la cotizacion deseada o ESC para finalizar")
+// }
+// alert("Muchas gracias por realizar su conversion de divisas con nosotros")
+// }
 
 
 // // Actividad 5
 
+// Codificar una función con la siguiente cabecera: validacion(cadena). 
+// En ella, se retorna un valor booleano, el cual es true si el parámetro no es un cadena vacía. 
+// Caso contrario, se retorna false. Luego invocar la función de forma iterativa, 
+// hasta que el usuario tipee “ESC”, solicitando en cada ciclo una cadena a validar.
 
+function validacion(cadena){
+    return cadena!="";
+}
+  let entrada=prompt("Ingrese valor de cadena")
+    while (entrada != 'ESC') {
+        alert(validacion(entrada)); // esta linea seria la que indica el true o false.
+        entrada = prompt("INGRESAR CADENA");
+    }
+    
